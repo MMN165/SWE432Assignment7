@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const aFunc = ()=>({name: 'David'});
+export const aFunc = ()=>({name: 'Megan'});
 export default function Hooks(props) {
     const {name} = props;
     let [clicks, setClicks] = useState(0);
@@ -8,8 +8,8 @@ export default function Hooks(props) {
 
     const doSomething = function (event) {
         console.log(event.currentTarget.getAttribute('data-something'));
-        setClicks(clicks + 2);
-        setClicks2(clicks2 +4);
+        setClicks(clicks + 1);
+        setClicks2(clicks2 +1);
     }
     return (
         <React.Fragment>
