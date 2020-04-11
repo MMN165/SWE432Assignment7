@@ -7,6 +7,15 @@ import Fetcher from './components/Fetcher';
 import Hooks, {aFunc} from './components/Hooks';
 import ToggleButtons from './components/ToggleButtons';
 
+function App() {
+  return (
+    <div className="App">
+      <Hooks name={aFunc().name}/>
+      <Fetcher url={'https://randomuser.me/api/'}/>
+    </div>
+  );
+}
+
 export const getLocationUrlData = () => {
   return {
       url:
