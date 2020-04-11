@@ -15,7 +15,7 @@ export default function Hooks(props) {
         <React.Fragment>
           <p>Hi, I am {name}</p>
             <p>click count:{clicks}, {clicks2}</p>
-            <button onClick={doSomething} data-something="Default">
+            <button onClick={doSomething} data-something="Click">
                 Default</button>
         </React.Fragment>
 
