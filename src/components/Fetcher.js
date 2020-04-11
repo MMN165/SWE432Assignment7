@@ -45,6 +45,21 @@ export default function Fetcher(props) {
 
 
     return (
+          <React.Fragment>
+            <p>Number of times data retrieved: {clicks}</p>
+            <button onClick={doSomething} data-something="Click">
+                Retrieve User Data</button>
+            <p>{response? JSON.stringify(response) :
+              <p>
+                <Skeleton animation="wave" />
+                <Skeleton variant="text"/>
+                <Skeleton variant="text"/>
+                <Skeleton variant="circle" width={40} height={40}/>
+                <Skeleton variant="rect" width={210} height={118}/>
+              </p>
+            }</p>
+        </React.Fragment>
+
         <Grid
         container
         direction="row"
