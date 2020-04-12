@@ -38,7 +38,7 @@ function App() {
       <p>Partners: Megan Ngo and Thomas Rigger </p>
       </div>
     <FormControl component="fieldset">
-      <FormLabel component="legend">Gender</FormLabel>
+      <FormLabel component="legend">School Year</FormLabel>
       <RadioGroup aria-label="schoolYear" name="year1" value={value} onChange={handleChange}>
         <FormControlLabel value="freshman" control={<Radio />} label="Freshman" />
         <FormControlLabel value="sophomore" control={<Radio />} label="Sophomore" />
