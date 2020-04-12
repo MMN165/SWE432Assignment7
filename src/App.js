@@ -31,7 +31,7 @@ function App() {
   }, [])
 
 return (
-  
+   <div>
       <FormControl component="fieldset">
       <FormLabel component="legend">Gender</FormLabel>
       <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
@@ -42,7 +42,6 @@ return (
       </RadioGroup>
     </FormControl>
   
-    <div>
       <h1>SWE 432: Assignment 7</h1>
       <p>Partners: Megan Ngo and Thomas Rigger </p>
       <p>Please rate the following GMU buildings on a scale of 1 (worst) to 5 (best): </p>
