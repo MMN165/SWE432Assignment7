@@ -17,7 +17,7 @@ import Hooks, {aFunc} from './components/Hooks';
 function App() {
     
   const [loading, setLoading] = useState(true);
-  const [rating, setRating] = useState(3);
+  const [rating, setRating, FW, JC, RHB, SS, VSOE] = useState(3);
   
   const [value, setValue] = React.useState('freshman');
 
@@ -49,16 +49,21 @@ function App() {
     <div>
     <p>Please rate the following GMU buildings on a scale of 1 (worst) to 5 (best): </p>
       <p>Fenwick Library</p>
-    <Rating name = "Fenwick Library" value={rating} size="large" precision={0.5} onChange={(e, value) => setRating(value)} />
+      <Rating name = "Fenwick Library" FW={rating} precision={0.5} onChange={(e, FW) => setRating(FW)} />
       <p>Johnson Center</p>
-      <Rating name = "Johnson Center" value={rating} size="large" precision={0.5} onChange={(e, value) => setRating(value)} />
+      <Rating name = "Johnson Center" JC={rating} precision={0.5} onChange={(e, JC) => setRating(JC)} />
       <p>Robinson Hall B</p>
-      <Rating name = "Robinson Hall B" value={rating} size="large" precision={0.5} onChange={(e, value) => setRating(value)} />
+      <Rating name = "Robinson Hall B" RHB={rating} precision={0.5} onChange={(e, RHB) => setRating(RHB)} />
       <p>Southside</p>
-      <Rating name = "Southside" value={rating} size="large" precision={0.5} onChange={(e, value) => setRating(value)} />
+      <Rating name = "Southside" SS={rating} precision={0.5} onChange={(e, SS) => setRating(SS)} />
       <p>Volgenau School of Engineering</p>
-      <Rating name = "Volgenau School of Engineering" value={rating} size="large" precision={0.5} onChange={(e, value) => setRating(value)} />
-      
+      <Rating name = "Volgenau School of Engineering" VSOE={rating} precision={0.5} onChange={(e, VSOE) => setRating(VSOE)} />
+      <p>Results: 
+       Fenwick Library:                {FW} 
+       Johnson Center:                 {JC} 
+       Robinson Hall B:                {RHB} 
+       South Side:                     {SS} 
+       Volgenau School of Engineering: {VSOE}</p>
       </div>
     </>
   );
