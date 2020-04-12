@@ -24,7 +24,7 @@ return (
       <p>Partners: Megan Ngo and Thomas Rigger </p>
       <p>Please rate the following GMU buildings on a scale of 1 (worst) to 5 (best): </p>
       <p>Fenwick Library</p>
-      <Rating name = "Fenwick Library" value={rating} precision={0.5} onChange={(e, value) => setRating(value)} />
+      <Rating name = "Fenwick Library" value={rating} precision={0.5} onChange={(e, value) => setRating(value)} size="large"/>
       <p>Johnson Center</p>
       <Rating name = "Johnson Center" value={rating} precision={0.5} onChange={(e, value) => setRating(value)} />
       <p>Robinson Hall B</p>
