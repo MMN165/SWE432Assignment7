@@ -31,19 +31,6 @@ function App() {
   }, [])
 
 return (
-    <React.Fragment>
-    <Comp1 />
-      <FormControl component="fieldset">
-      <FormLabel component="legend">Gender</FormLabel>
-      <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
-        <FormControlLabel value="female" control={<Radio />} label="Female" />
-        <FormControlLabel value="male" control={<Radio />} label="Male" />
-        <FormControlLabel value="other" control={<Radio />} label="Other" />
-        <FormControlLabel value="disabled" disabled control={<Radio />} label="(Disabled option)" />
-      </RadioGroup>
-    </FormControl>
-  
-  <Comp2 />
   <div>
       <h1>SWE 432: Assignment 7</h1>
       <p>Partners: Megan Ngo and Thomas Rigger </p>
@@ -60,7 +47,6 @@ return (
       <Rating name = "Volgenau School of Engineering" value={rating} precision={0.5} onChange={(e, value) => setRating(value)} />
       
     </div>
-  </React.Fragment>
   );
 }
 
