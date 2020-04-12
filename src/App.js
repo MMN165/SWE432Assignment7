@@ -1,52 +1,42 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 import './App.css';
 import Fetcher from './components/Fetcher';
 import Hooks, {aFunc} from './components/Hooks';
-import ToggleButtons from './components/ToggleButtons';
+import {Skeleton, Rating} from "@material-ui/lab";
 
-export const getLocationUrlData = () => {
-  return {
-      url:
-          process.env.NODE_ENV === 'production'?
-          'https://swe432tomcat.herokuapp.com'
-          :`${window.location.origin}`,
-      hash: `${window.location.hash}`
-  };
-};
-export const servicePath ='/echo';
 
-function App(props) {
-  const [weekDay, setWeekDay] = React.useState("Monday");
-  return (
-    <div style={{flexGrow: 1}}>
-      <Grid 
-      container
-      direction="column"
-      justify="center"
-      alignItems="stretch"
-      spacing={2}
-      >
-        <Grid item xs>
-          <Paper elevation={1}>
-            <Hooks name={aFunc().name}/>
-            </Paper>
-        </Grid>
-        <Grid item xs>
-          <Paper elevation={1}>
-            <Fetcher  value={weekDay} url={`${getLocationUrlData().url}${servicePath}`}/>
-            </Paper>
-          </Grid>
-        <Grid item xs>
-          <Paper elevation={1}>
-            <ToggleButtons value={weekDay} onChange ={setWeekDay}/>
-          </Paper>
-          </Grid>
-      </Grid>
+function App() {
+  const [loading, setLoading] = useState(true);
+  const [rating, setRating] = useState(3);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, [])
+
+return (
+    <div>
+      <h1>SWE 432: Assignment 7</h1>
+      <p>Partners: Megan Ngo and Thomas Rigger </p>
+      <p>Please rate the following GMU buildings on a scale of 1 (worst) to 5 (best): </p>
+      <p>Fenwick Library</p>
+      <Rating name = "Fenwick Library" value={rating} precision={0.5} onChange={(e, value) => setRating(value)} />
+      <p>Johnson Center</p>
+      <Rating name = "Johnson Center" value={rating} precision={0.5} onChange={(e, value) => setRating(value)} />
+      <p>Robinson Hall B</p>
+      <Rating name = "Robinson Hall B" value={rating} precision={0.5} onChange={(e, value) => setRating(value)} />
+      <p>Southside</p>
+      <Rating name = "Southside" value={rating} precision={0.5} onChange={(e, value) => setRating(value)} />
+      <p>Volgenau School of Engineering</p>
+      <Rating name = "Volgenau School of Engineering" value={rating} precision={0.5} onChange={(e, value) => setRating(value)} />
+      
     </div>
   );
 }
 
 export default App;
+
