@@ -12,7 +12,7 @@ import {Rating} from "@material-ui/lab";
 import './App.css';
 import Fetcher from './components/Fetcher';
 import Hooks, {aFunc} from './components/Hooks';
-import {Skeleton, Rating} from "@material-ui/lab";
+// import {Skeleton, Rating} from "@material-ui/lab";
 
 function App() {
     
