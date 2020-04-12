@@ -49,7 +49,7 @@ function App() {
     <div>
     <p>Please rate the following GMU buildings on a scale of 1 (worst) to 5 (best): </p>
       <p>Fenwick Library</p>
-    <Rating name = "Fenwick Library" value={rating} size="large" defaultValue={0} precision={0.5} onChange={(e, value) => setRating(value)} />
+    <Rating name = "Fenwick Library" value={rating} size="large" precision={0.5} onChange={(e, value) => setRating(value)} />
       <p>Johnson Center</p>
       <Rating name = "Johnson Center" value={rating} size="large" precision={0.5} onChange={(e, value) => setRating(value)} />
       <p>Robinson Hall B</p>
