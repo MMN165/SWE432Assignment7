@@ -7,19 +7,6 @@ import Fetcher from './components/Fetcher';
 import Hooks, {aFunc} from './components/Hooks';
 import {Skeleton, Rating} from "@material-ui/lab";
 
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
-
-export default function RadioButtonsGroup() {
-  const [value, setValue] = React.useState('female');
-
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
-
 function App() {
   const [loading, setLoading] = useState(true);
   const [rating, setRating] = useState(3);
