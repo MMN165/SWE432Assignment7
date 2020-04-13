@@ -76,11 +76,11 @@ function printValues() {
     var ss = document.getElementById('SS');
     var vs = document.getElementById('VSOE');
     
-    var x = FW;
+    /*var x = FW;
     <script>
     document.write(x);
      document.write("TESTING");
-    </script>
+    </script> */
 }
 
 export default App;
