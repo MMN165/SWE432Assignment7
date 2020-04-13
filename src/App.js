@@ -62,7 +62,7 @@ function App() {
       <Rating name = "Volgenau School of Engineering" VSOE={rating} precision={0.5} onChange={(e, VSOE) => setRating(VSOE)} />
     
         <button onclick="printValues()" id="printV">Submit</button> 
-    
+    <p></p>
       </div>
     </>
   );
@@ -76,7 +76,9 @@ function printValues() {
     var ss = document.getElementById('SS');
     var vs = document.getElementById('VSOE');
     
-    document.write(FW.getRating());
+    var x = FW;
+    document.write(x);
+     document.write("TESTING");
 
 }
 
