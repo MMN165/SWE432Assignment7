@@ -50,10 +50,10 @@ function App() {
     </FormControl> 
     <div>
     <p>Please rate the following GMU buildings on a scale of 1 (worst) to 5 (best): </p>
-      <p>Fenwick Library</p>
-      <Rating name = "Fenwick Library" id="FW" FW={rating} precision={0.5} onChange={(e, FW) => setRating(FW)} />
       <p>Johnson Center</p>
       <Rating name = "Johnson Center" JC={rating} precision={0.5} onChange={(e, JC) => setRating(JC)} />
+      <p>Fenwick Library</p>
+      <Rating name = "Fenwick Library" id="FW" FW={rating} precision={0.5} onChange={(e, FW) => setRating(FW)} />
       <p>Robinson Hall B</p>
       <Rating name = "Robinson Hall B" RHB={rating} precision={0.5} onChange={(e, RHB) => setRating(RHB)} />
       <p>Southside</p>
