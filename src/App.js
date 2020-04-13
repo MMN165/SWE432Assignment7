@@ -51,7 +51,7 @@ function App() {
     <div>
     <p>Please rate the following GMU buildings on a scale of 1 (worst) to 5 (best): </p>
       <p>Fenwick Library</p>
-      <Rating name = "Fenwick Library" FW={rating} precision={0.5} onChange={(e, FW) => setRating(FW)} />
+      <Rating name = "Fenwick Library" id="FW" FW={rating} precision={0.5} onChange={(e, FW) => setRating(FW)} />
       <p>Johnson Center</p>
       <Rating name = "Johnson Center" JC={rating} precision={0.5} onChange={(e, JC) => setRating(JC)} />
       <p>Robinson Hall B</p>
