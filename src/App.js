@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+// import Paper from '@material-ui/core/Paper';
+// import Grid from '@material-ui/core/Grid';
 
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
@@ -16,11 +16,23 @@ import Hooks, {aFunc} from './components/Hooks';
 
 var FW;
 
+const [loading, setLoading] = useState(true);
+// const [rating, setRating, FW, JC, RHB, SS, VSOE] = useState(3);
+const [ratingJC, setRatingJC] = useState(2.5);
+const [ratingFW, setRatingFW] = useState(2.5);
+const [ratingRHB, setRatingRHB] = useState(2.5);
+const [ratingSS, setRatingSS] = useState(2.5);
+const [ratingVSE, setRatingVSE] = useState(2.5);
+
+const changeJC = (e1, newJC) => { setRatingJC(newJC); };
+const changeFW = (e2, newFW) => { setRatingFW(newFW); };
+const changeRHB = (e3, newRHB) => { setRatingRHB(newRHB); };
+const changeSS = (e4, newSS) => { setRatingSS(newSS); };
+const changeVSE = (e5, newVSE) => { setRatingVSE(newVSE); };
+
+
 function App() {
-    
-  const [loading, setLoading] = useState(true);
-  const [rating, setRating, FW, JC, RHB, SS, VSOE] = useState(3);
-  
+
   const [value, setValue] = React.useState('freshman');
 
   const handleChange = (event) => {
@@ -51,51 +63,39 @@ function App() {
     <div>
     <p>Please rate the following GMU buildings on a scale of 1 (worst) to 5 (best): </p>
        <FormLabel component="legend">Johnson Center</FormLabel>
-      <Rating name = "Johnson Center" id="JC" JC={rating} precision={0.5} defaultValue={2.5} onChange={(e, JC) => setRating(JC)} />
+      <Rating name = "Johnson Center" id="JC" JC={ratingJC} precision={0.5} defaultValue={2.5} onChange={changeJC} />
      <p></p>
           <FormLabel component="legend">Fenwick Library</FormLabel>
-    <Rating name = "Fenwick Library" id="FW" FW={rating} precision={0.5} defaultValue={2.5} onChange={(e, FW) => setRating(FW)} />
+    <Rating name = "Fenwick Library" id="FW" FW={ratingFW} precision={0.5} defaultValue={2.5} onChange={changeFW} />
      <p></p>
         <FormLabel component="legend">Robinson Hall B</FormLabel>
-      <Rating name = "Robinson Hall B" id="RHB" RHB={rating} precision={0.5} defaultValue={2.5} onChange={(e, RHB) => setRating(RHB)} />
+      <Rating name = "Robinson Hall B" id="RHB" RHB={ratingRHB} precision={0.5} defaultValue={2.5} onChange={changeRHB} />
     <p></p>
           <FormLabel component="legend">Southside</FormLabel>
-      <Rating name = "Southside" id="SS" SS={rating} precision={0.5} defaultValue={2.5} onChange={(e, SS) => setRating(SS)} />
+      <Rating name = "Southside" id="SS" SS={ratingSS} precision={0.5} defaultValue={2.5} onChange={changeSS} />
      <p></p>
           <FormLabel component="legend">Volgenau School of Engineering</FormLabel>
-       <Rating name = "Volgenau School of Engineering" id="VSOE" VSOE={rating} precision={0.5} defaultValue={2.5} onChange={(e, VSOE) => setRating(VSOE)} />
+       <Rating name = "Volgenau School of Engineering" id="VSE" VSE={ratingVSE} precision={0.5} defaultValue={2.5}  onChange={changeVSE} />
 <p></p><p></p><p></p>
         <button onclick="printValues()" id="printV">Submit</button> 
-    <script>
-    document.write("PRINT ANYTHING"); </script>
-    <p></p>
+
+<p></p>
+SCHOOL YEAR: {value}
+<p></p>
+JC: {ratingJC}
+<p></p>
+FW: {ratingFW}
+<p></p>
+RHB: {ratingRHB}
+<p></p>
+SS: {ratingSS}  
+<p></p>
+VSE: {ratingVSE}
+<p></p>
       </div>
+
     </>
   );
 }
 
-function printValues() {
-    // get the values
-    var jc = document.getElementById('JC');
-    var fw = document.getElementById('FW');
-    var rb = document.getElementById('RHB');
-    var ss = document.getElementById('SS');
-    var vs = document.getElementById('VSOE');
-
-    document.write(jc);
-    document.write("PRINT ANYTHING");
-    /*  // <Rating name = "Johnson Center" JC={rating} precision={0.5} onChange={(e, JC) => setRating(JC)} />
- // <Rating name = "Fenwick Library" id="FW" FW={rating} precision={0.5} onChange={(e, FW) => setRating(FW)} />
-      // <Rating name = "Robinson Hall B" RHB={rating} precision={0.5} onChange={(e, RHB) => setRating(RHB)} />
-      // <Rating name = "Southside" SS={rating} precision={0.5} onChange={(e, SS) => setRating(SS)} />
-      // <Rating name = "Volgenau School of Engineering" VSOE={rating} precision={0.5} onChange={(e, VSOE) => setRating(VSOE)} />
-     */
-    
- /* //   <script>
-   document.write(jc);
-     document.write("TESTING"); */
-    // </script> 
-} 
-
 export default App;
-
