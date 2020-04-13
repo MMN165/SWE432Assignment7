@@ -63,7 +63,7 @@ function App() {
     
         <button onclick="printValues()" id="printV">Submit</button> 
     
-        <script>
+        /*<script>
 
         function printValues(){
             var jc = document.getElementById('JC');
@@ -72,27 +72,26 @@ function App() {
             var ss = document.getElementById('SS');
             var vs = document.getElementById('VSOE');   
         }
-        </script>
+        </script> */
     <p></p>
       </div>
     </>
   );
 }
 
-/*function printValues() {
+function printValues() {
     // get the values
     var jc = document.getElementById('JC');
     var fw = document.getElementById('FW');
     var rb = document.getElementById('RHB');
     var ss = document.getElementById('SS');
     var vs = document.getElementById('VSOE');
-    
-    var x = FW;
-    <script>
-    document.write(x);
+
+  //   <script>
+   document.write(jc);
      document.write("TESTING");
-    </script> 
-} */
+    // </script> 
+} 
 
 export default App;
 
