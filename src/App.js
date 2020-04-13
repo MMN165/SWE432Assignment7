@@ -75,12 +75,9 @@ function printValues() {
     var vs = document.getElementById('VSOE');
     
     <div>
-         <p>Results: 
-       Fenwick Library:                {FW} 
-       Johnson Center:                 {JC} 
-       Robinson Hall B:                {RHB} 
-       South Side:                     {SS} 
-       Volgenau School of Engineering: {VSOE}</p>
+        <script>
+        document.write("JC: " + jc);
+        </script>
     <p></p>
       <p></p>
       <p></p>
