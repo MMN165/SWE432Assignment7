@@ -62,13 +62,24 @@ function App() {
       <Rating name = "Volgenau School of Engineering" id="VSOE" VSOE={rating} precision={0.5} defaultValue={2.5} onChange={(e, VSOE) => setRating(VSOE)} />
     
         <button onclick="printValues()" id="printV">Submit</button> 
+    
+        <script>
+
+        function printValues(){
+            var jc = document.getElementById('JC').value;
+            var fw = document.getElementById('FW').value;
+            var rb = document.getElementById('RHB').value;
+            var ss = document.getElementById('SS').value;
+            var vs = document.getElementById('VSOE').value;   
+        }
+        </script>
     <p></p>
       </div>
     </>
   );
 }
 
-function printValues() {
+/*function printValues() {
     // get the values
     var jc = document.getElementById('JC');
     var fw = document.getElementById('FW');
@@ -76,12 +87,12 @@ function printValues() {
     var ss = document.getElementById('SS');
     var vs = document.getElementById('VSOE');
     
-    /*var x = FW;
+    var x = FW;
     <script>
     document.write(x);
      document.write("TESTING");
-    </script> */
-}
+    </script> 
+} */
 
 export default App;
 
