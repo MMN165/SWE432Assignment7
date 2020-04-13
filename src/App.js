@@ -51,28 +51,22 @@ function App() {
     <div>
     <p>Please rate the following GMU buildings on a scale of 1 (worst) to 5 (best): </p>
       <p>Johnson Center</p>
+      // <Rating name = "Johnson Center" JC={rating} precision={0.5} onChange={(e, JC) => setRating(JC)} />
       <Rating name = "Johnson Center" id="JC" JC={rating} precision={0.5} defaultValue={2.5} onChange={(e, JC) => setRating(JC)} />
       <p>Fenwick Library</p>
+      // <Rating name = "Fenwick Library" id="FW" FW={rating} precision={0.5} onChange={(e, FW) => setRating(FW)} />
       <Rating name = "Fenwick Library" id="FW" FW={rating} precision={0.5} defaultValue={2.5} onChange={(e, FW) => setRating(FW)} />
       <p>Robinson Hall B</p>
+      // <Rating name = "Robinson Hall B" RHB={rating} precision={0.5} onChange={(e, RHB) => setRating(RHB)} />
       <Rating name = "Robinson Hall B" id="RHB" RHB={rating} precision={0.5} defaultValue={2.5} onChange={(e, RHB) => setRating(RHB)} />
       <p>Southside</p>
+      // <Rating name = "Southside" SS={rating} precision={0.5} onChange={(e, SS) => setRating(SS)} />
       <Rating name = "Southside" id="SS" SS={rating} precision={0.5} defaultValue={2.5} onChange={(e, SS) => setRating(SS)} />
       <p>Volgenau School of Engineering</p>
+      // <Rating name = "Volgenau School of Engineering" VSOE={rating} precision={0.5} onChange={(e, VSOE) => setRating(VSOE)} />
       <Rating name = "Volgenau School of Engineering" id="VSOE" VSOE={rating} precision={0.5} defaultValue={2.5} onChange={(e, VSOE) => setRating(VSOE)} />
-    
-        <button onclick="printValues()" id="printV">Submit</button> 
-    
-        /*<script>
 
-        function printValues(){
-            var jc = document.getElementById('JC');
-            var fw = document.getElementById('FW');
-            var rb = document.getElementById('RHB');
-            var ss = document.getElementById('SS');
-            var vs = document.getElementById('VSOE');   
-        }
-        </script> */
+        <button onclick="printValues()" id="printV">Submit</button> 
     <p></p>
       </div>
     </>
@@ -81,7 +75,7 @@ function App() {
 
 function printValues() {
     // get the values
-    var jc = document.getElementById('JC');
+/*    var jc = document.getElementById('JC');
     var fw = document.getElementById('FW');
     var rb = document.getElementById('RHB');
     var ss = document.getElementById('SS');
@@ -89,7 +83,7 @@ function printValues() {
 
   //   <script>
    document.write(jc);
-     document.write("TESTING");
+     document.write("TESTING"); */
     // </script> 
 } 
 
