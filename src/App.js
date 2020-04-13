@@ -76,6 +76,7 @@ function printValues() {
     var ss = document.getElementById('SS');
     var vs = document.getElementById('VSOE');
 
+    document.write(jc);
     /*  // <Rating name = "Johnson Center" JC={rating} precision={0.5} onChange={(e, JC) => setRating(JC)} />
  // <Rating name = "Fenwick Library" id="FW" FW={rating} precision={0.5} onChange={(e, FW) => setRating(FW)} />
       // <Rating name = "Robinson Hall B" RHB={rating} precision={0.5} onChange={(e, RHB) => setRating(RHB)} />
