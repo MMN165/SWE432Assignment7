@@ -66,11 +66,11 @@ function App() {
         <script>
 
         function printValues(){
-            var jc = document.getElementById('JC').value;
-            var fw = document.getElementById('FW').value;
-            var rb = document.getElementById('RHB').value;
-            var ss = document.getElementById('SS').value;
-            var vs = document.getElementById('VSOE').value;   
+            var jc = document.getElementById('JC');
+            var fw = document.getElementById('FW');
+            var rb = document.getElementById('RHB');
+            var ss = document.getElementById('SS');
+            var vs = document.getElementById('VSOE');   
         }
         </script>
     <p></p>
