@@ -14,9 +14,15 @@ import Fetcher from './components/Fetcher';
 import Hooks, {aFunc} from './components/Hooks';
 // import {Skeleton, Rating} from "@material-ui/lab";
 
-var FW;
+function App() {
 
-const [loading, setLoading] = useState(true);
+  const [value, setValue] = React.useState('freshman');
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
+
+  const [loading, setLoading] = useState(true);
 // const [rating, setRating, FW, JC, RHB, SS, VSOE] = useState(3);
 const [ratingJC, setRatingJC] = useState(2.5);
 const [ratingFW, setRatingFW] = useState(2.5);
@@ -30,14 +36,6 @@ const changeRHB = (e3, newRHB) => { setRatingRHB(newRHB); };
 const changeSS = (e4, newSS) => { setRatingSS(newSS); };
 const changeVSE = (e5, newVSE) => { setRatingVSE(newVSE); };
 
-
-function App() {
-
-  const [value, setValue] = React.useState('freshman');
-
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -78,7 +76,7 @@ function App() {
        <Rating name = "Volgenau School of Engineering" id="VSE" VSE={ratingVSE} precision={0.5} defaultValue={2.5}  onChange={changeVSE} />
 <p></p><p></p><p></p>
         <button onclick="printValues()" id="printV">Submit</button> 
-
+  
 <p></p>
 SCHOOL YEAR: {value}
 <p></p>
