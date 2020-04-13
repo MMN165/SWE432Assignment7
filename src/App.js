@@ -57,13 +57,13 @@ function App() {
       <p>Southside</p>
       <Rating name = "Southside" SS={rating} precision={0.5} onChange={(e, SS) => setRating(SS)} />
       <p>Volgenau School of Engineering</p>
-      <Rating name = "Volgenau School of Engineering" VSE={rating} precision={0.5} onChange={(e, VSE) => setRating(VSE)} />
+      <Rating name = "Volgenau School of Engineering" VSOE={rating} precision={0.5} onChange={(e, VSOE) => setRating(VSOE)} />
       <p>Results: 
        Fenwick Library:                {FW} 
        Johnson Center:                 {JC} 
        Robinson Hall B:                {RHB} 
        South Side:                     {SS} 
-       Volgenau School of Engineering: {VSE}</p>
+       Volgenau School of Engineering: {VSOE}</p>
     
         <button onclick="printValues()" id="printV">Submit</button> 
     
@@ -78,7 +78,7 @@ function printValues() {
     var fw = document.getElementById('FW');
     var rb = document.getElementById('RHB');
     var ss = document.getElementById('SS');
-    var vs = document.getElementById('VSE');
+    var vs = document.getElementById('VSOE');
   }
 
 export default App;
