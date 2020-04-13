@@ -72,7 +72,7 @@ function App() {
   );
 }
 
-function toggleClock() {
+function printValues() {
     // get the values
     var jc = document.getElementById('JC');
     var fw = document.getElementById('FW');
