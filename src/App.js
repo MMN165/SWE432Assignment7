@@ -52,18 +52,22 @@ function App() {
     <p>Please rate the following GMU buildings on a scale of 1 (worst) to 5 (best): </p>
        <FormLabel component="legend">Johnson Center</FormLabel>
       <Rating name = "Johnson Center" id="JC" JC={rating} precision={0.5} defaultValue={2.5} onChange={(e, JC) => setRating(JC)} />
-      <FormLabel component="legend">Fenwick Library</FormLabel>
-     <Rating name = "Fenwick Library" id="FW" FW={rating} precision={0.5} defaultValue={2.5} onChange={(e, FW) => setRating(FW)} />
-      <FormLabel component="legend">Robinson Hall B</FormLabel>
+     <p></p>
+          <FormLabel component="legend">Fenwick Library</FormLabel>
+    <Rating name = "Fenwick Library" id="FW" FW={rating} precision={0.5} defaultValue={2.5} onChange={(e, FW) => setRating(FW)} />
+     <p></p>
+        <FormLabel component="legend">Robinson Hall B</FormLabel>
       <Rating name = "Robinson Hall B" id="RHB" RHB={rating} precision={0.5} defaultValue={2.5} onChange={(e, RHB) => setRating(RHB)} />
-     <FormLabel component="legend">Southside</FormLabel>
+    <p></p>
+          <FormLabel component="legend">Southside</FormLabel>
       <Rating name = "Southside" id="SS" SS={rating} precision={0.5} defaultValue={2.5} onChange={(e, SS) => setRating(SS)} />
-      <FormLabel component="legend">Volgenau School of Engineering</FormLabel>
+     <p></p>
+          <FormLabel component="legend">Volgenau School of Engineering</FormLabel>
        <Rating name = "Volgenau School of Engineering" id="VSOE" VSOE={rating} precision={0.5} defaultValue={2.5} onChange={(e, VSOE) => setRating(VSOE)} />
 <p></p><p></p><p></p>
         <button onclick="printValues()" id="printV">Submit</button> 
-    
-    document.write("PRINT ANYTHING");
+    <script>
+    document.write("PRINT ANYTHING"); </script>
     <p></p>
       </div>
     </>
