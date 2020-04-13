@@ -50,7 +50,7 @@ function App() {
     </FormControl> 
     <div>
     <p>Please rate the following GMU buildings on a scale of 1 (worst) to 5 (best): </p>
-      <p>Johnson Center</p>
+       <FormLabel component="legend">Johnson Center</FormLabel>
       <Rating name = "Johnson Center" id="JC" JC={rating} precision={0.5} defaultValue={2.5} onChange={(e, JC) => setRating(JC)} />
       <p>Fenwick Library</p>
      <Rating name = "Fenwick Library" id="FW" FW={rating} precision={0.5} defaultValue={2.5} onChange={(e, FW) => setRating(FW)} />
@@ -77,6 +77,7 @@ function printValues() {
     var vs = document.getElementById('VSOE');
 
     document.write(jc);
+    document.write("PRINT ANYTHING");
     /*  // <Rating name = "Johnson Center" JC={rating} precision={0.5} onChange={(e, JC) => setRating(JC)} />
  // <Rating name = "Fenwick Library" id="FW" FW={rating} precision={0.5} onChange={(e, FW) => setRating(FW)} />
       // <Rating name = "Robinson Hall B" RHB={rating} precision={0.5} onChange={(e, RHB) => setRating(RHB)} />
