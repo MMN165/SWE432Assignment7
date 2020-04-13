@@ -76,15 +76,8 @@ function printValues() {
     var ss = document.getElementById('SS');
     var vs = document.getElementById('VSOE');
     
-    <div>
-        <script>
-        document.write(FW.getRating());
-        </script>
-    <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-    </div>
+    document.write(FW.getRating());
+
 }
 
 export default App;
