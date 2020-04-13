@@ -75,13 +75,13 @@ function App() {
 
 function printValues() {
     // get the values
-/*    var jc = document.getElementById('JC');
+    var jc = document.getElementById('JC');
     var fw = document.getElementById('FW');
     var rb = document.getElementById('RHB');
     var ss = document.getElementById('SS');
     var vs = document.getElementById('VSOE');
 
-  //   <script>
+ /* //   <script>
    document.write(jc);
      document.write("TESTING"); */
     // </script> 
