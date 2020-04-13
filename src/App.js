@@ -77,9 +77,10 @@ function printValues() {
     var vs = document.getElementById('VSOE');
     
     var x = FW;
+    <script>
     document.write(x);
      document.write("TESTING");
-
+    </script>
 }
 
 export default App;
