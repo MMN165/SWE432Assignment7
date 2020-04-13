@@ -59,14 +59,14 @@ function App() {
       <p>Volgenau School of Engineering</p>
       <Rating name = "Volgenau School of Engineering" VSOE={rating} precision={0.5} onChange={(e, VSOE) => setRating(VSOE)} />
     
-        <button onclick="printValues()" id="printV">Submit</button> 
+        <button onclick="printValues(FW, JC, RHB, SS, VSOE)" id="printV">Submit</button> 
     
       </div>
     </>
   );
 }
 
-function printValues() {
+function printValues(int FW,int  JC, int RHB, int SS, int VSOE) {
     // get the values
     var jc = document.getElementById('JC');
     var fw = document.getElementById('FW');
