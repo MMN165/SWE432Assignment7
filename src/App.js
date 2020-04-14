@@ -45,7 +45,7 @@ const changeVSE = (e5, newVSE) => { setRatingVSE(newVSE); };
 
   return (
     <>
-    <div align = "center">
+     <div align = "center">
       <h1>SWE 432: Assignment 7</h1>
       <p>Partners: Megan Ngo and Thomas Rigger </p>
       </div>
@@ -62,37 +62,37 @@ const changeVSE = (e5, newVSE) => { setRatingVSE(newVSE); };
     </FormControl> 
     </ Grid>
 
-    <div>
+    <div align = "center">
  <p>Please rate the following GMU buildings on a scale of 1 (worst) to 5 (best): </p>
 
- <Grid container direction="column" justify="space-evenly">
+ <Grid container direction="column" justify="space-evenly" alignItems="center">
        <FormLabel component="legend">Johnson Center</FormLabel>
       <Rating name = "Johnson Center" id="JC" JC={ratingJC} precision={0.5} defaultValue={2.5} onChange={changeJC} />
     </ Grid>
      <p></p>
 
-     <Grid container direction="column" justify="space-evenly">
+     <Grid container direction="column" justify="space-evenly" alignItems="center">
           <FormLabel component="legend">Fenwick Library</FormLabel>
     <Rating name = "Fenwick Library" id="FW" FW={ratingFW} precision={0.5} defaultValue={2.5} onChange={changeFW} />
     </ Grid>
      <p></p>
 
-     <Grid container direction="column" justify="space-evenly">
+     <Grid container direction="column" justify="space-evenly" alignItems="center">
         <FormLabel component="legend">Robinson Hall B</FormLabel>
       <Rating name = "Robinson Hall B" id="RHB" RHB={ratingRHB} precision={0.5} defaultValue={2.5} onChange={changeRHB} />
       </ Grid>
     <p></p>
 
-    <Grid container direction="column" justify="space-evenly">
+    <Grid container direction="column" justify="space-evenly" alignItems="center">
           <FormLabel component="legend">Southside</FormLabel>
       <Rating name = "Southside" id="SS" SS={ratingSS} precision={0.5} defaultValue={2.5} onChange={changeSS} />
       </ Grid>
      <p></p>
 
-     <Grid container direction="column" justify="space-evenly">
+     <Grid container direction="column" justify="space-evenly" alignItems="center">
           <FormLabel component="legend">Volgenau School of Engineering</FormLabel>
        <Rating name = "Volgenau School of Engineering" id="VSE" VSE={ratingVSE} precision={0.5} defaultValue={2.5}  onChange={changeVSE} />
-       </ Grid> 
+       </ Grid>
 <p></p><p></p><p></p>
         <button onclick="printValues()" id="printV">Submit</button> 
   
